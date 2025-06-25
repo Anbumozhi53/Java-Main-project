@@ -1,0 +1,11 @@
+public interface UserRepository extends JpaRepository<User, Long> {
+    User findByEmail(String email);
+}
+
+public interface BusRepository extends JpaRepository<Bus, Long> {
+    List<Bus> findBySourceAndDestination(String source, String destination);
+}
+
+public interface BookingRepository extends JpaRepository<Booking, Long> {
+    List<Booking> findByUserId(Long userId);
+}
