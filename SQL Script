@@ -1,0 +1,7 @@
+CREATE TABLE user (...);
+CREATE TABLE bus (...);
+CREATE TABLE booking (...);
+
+INSERT INTO bus (source, destination, departure_time, arrival_time, price) VALUES
+('Chennai', 'Bangalore', '08:00', '14:00', 500),
+('Hyderabad', 'Mumbai', '10:00', '18:00', 700);
