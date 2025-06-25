@@ -1,0 +1,4 @@
+<h2>My Bookings</h2>
+<ul th:each="b : ${bookings}">
+  <li th:text="'Booking ID: ' + ${b.id} + ', Seat: ' + ${b.seatNumber} + ', Date: ' + ${b.date}"></li>
+</ul>
